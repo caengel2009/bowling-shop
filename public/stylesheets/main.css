@@ -1,0 +1,135 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+body {
+  font-family: Helvetica;
+}
+.btn {
+  background-color: #808080;
+  border: medium none;
+  color: #FFF;
+  margin: 5px;
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+.btn.selected {
+  background-color: #4c9cd9;
+}
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  z-index: 5;
+  background-color: orange;
+}
+.header .title {
+  float: left;
+  height: 100%;
+  margin: 0 5px;
+  line-height: 50px;
+}
+.header .hamburger-menu {
+  float: right;
+  height: 100%;
+  margin: 0 15px;
+  line-height: 50px;
+}
+.navigation {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  height: calc(100% - 50px * 2);
+  width: 200px;
+  background-color: blue;
+  color: white;
+  z-index: 5;
+}
+.view {
+  position: absolute;
+  top: 50px;
+  height: calc(100% - 50px);
+  overflow-y: auto;
+  width: 100%;
+}
+.view .customer-header {
+  width: 300px;
+  margin: 5px auto;
+}
+.view .customer-header .customer-data {
+  margin: 5px auto;
+}
+.view .customer-header .customer-data .label {
+  display: inline-block;
+  width: 35%;
+  text-align: right;
+}
+.view .customer-header .customer-data .data {
+  display: inline-block;
+  margin-left: 10%;
+  width: 50%;
+  text-align: left;
+}
+.view .divider {
+  width: 90%;
+  color: #4c9cd9;
+}
+.view .measurements {
+  width: 300px;
+  margin: 0 auto 0px auto;
+  text-align: center;
+}
+.view .measurements .hand > .btn {
+  width: 80px;
+}
+.view .measurements .top-section {
+  width: 240px;
+  height: 75px;
+  margin: 10px auto 0 auto;
+}
+.view .measurements .top-section .left {
+  float: left;
+}
+.view .measurements .top-section .right {
+  float: right;
+}
+.view .measurements .top-section ::after {
+  clear: both;
+}
+.view .measurements .bottom-section {
+  width: 100%;
+  height: 50px;
+  margin-top: 150px;
+}
+.view .measurements .bottom-section > .circle {
+  margin: 0 auto;
+}
+.view .measurements .bottom-section ::after {
+  clear: both;
+}
+.view .measurements .circle {
+  display: inline-block;
+  height: 75px;
+  max-height: 75px;
+  width: 75px;
+  max-width: 75px;
+  border-radius: 75px;
+  border: 2px solid #00C300;
+  text-align: center;
+  line-height: 75px;
+  font-size: 25px;
+}
+.footer {
+  height: 50px;
+  width: 100%;
+  background-color: orange;
+}
+.footer .copyright {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  line-height: 50px;
+}

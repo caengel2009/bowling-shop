@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Test app</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+
+  <script src="//localhost:35729/livereload.js"></script>
+  <script src="javascripts/bower_components/angular/angular.js"></script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="title">
+      Houston Bowling Supply {{ 1 + 1 }}
+    </div>
+    <div class="hamburger-menu">
+      M
+    </div>
+
+  </header>
+
+  <section class="view">
+    <header class="customer-header">
+      <div class="customer-data">
+        <label class="label">Customer:</label>
+        <input type="text" class="data" value="Jim T Customer">
+      </div>
+      <div class="customer-data">
+        <label class="label">Phone:</label>
+        <input type="tel" class="data" value="9991231234">
+      </div>
+    </header>
+
+    <hr class="divider">
+
+    <div class="measurements">
+      <div class="hand">
+        <button class="btn">Left</button>
+        <button class="btn">Other</button>
+        <button class="btn selected">Right</button>
+      </div>
+      <div class="top-section">
+        <input class="circle left" value="1">
+        <input class="circle right" value="2">
+      </div>
+      <div class="bottom-section">
+        <input class="circle" value="3">
+      </div>
+    </div>
+
+    <div class="notes">
+      <h1>Notes</h1>
+      <ul>
+        <li>
+          Item 1
+          <button> - </button>
+        </li>
+      </ul>
+      <input type="text">
+
+
+    <div class="controls">
+      <button>Reset</button>
+      <button>Save</button>
+    </div>
+
+    <div class="footer">
+      <div class="copyright">
+        Copyright 2015 - Curtis Engel
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

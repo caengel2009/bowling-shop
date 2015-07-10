@@ -1,0 +1,163 @@
+// Main page for stylings
+
+html, body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: Helvetica;
+}
+
+@navbar-height: 50px;
+@color-blue: rgb(76, 156, 217);
+
+// Imports
+@import "styles/buttons.less";
+
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: @navbar-height;
+  z-index: 5;
+  background-color: orange;
+
+  .title {
+    float: left;
+    height: 100%;
+    margin: 0 5px;
+    line-height: @navbar-height;
+  }
+
+  .hamburger-menu {
+    float: right;
+    height: 100%;
+    margin: 0 15px;
+    line-height: @navbar-height;
+  }
+}
+
+.navigation {
+  position: absolute;
+  right: 0;
+  top: @navbar-height;
+  height: calc(~'100% - @{navbar-height} * 2');
+  width: 200px;
+  background-color: blue;
+  color: white;
+  z-index: 5;
+}
+
+// Main data view
+.view {
+  position: absolute;
+  top: @navbar-height;
+  height: calc(~'100% - @{navbar-height}');
+  overflow-y: auto;
+  width: 100%;
+
+  .customer-header {
+    width: 300px;
+    margin: 5px auto;
+
+    .customer-data {
+      margin: 5px auto;
+
+      .label {
+        display: inline-block;
+        width: 35%;
+        text-align: right;
+      }
+      .data {
+        display: inline-block;
+        margin-left: 10%;
+        width: 50%;
+        text-align: left;
+      }
+    }
+  }
+
+  .divider {
+    width: 90%;
+    color: @color-blue;
+  }
+
+  // Measurement Widget
+  .measurements {
+
+    @circle-height: 75px;
+
+    width: 300px;
+    margin: 0 auto 0px auto;
+    text-align: center;
+
+    .hand {
+
+      // Custom stylings to stock button class
+      > .btn {
+        width: 80px;
+      }
+    }
+
+    .top-section {
+      width: 240px;
+      height: @circle-height;
+      margin: 10px auto 0 auto;
+
+      .left {
+        float: left;
+      }
+
+      .right {
+        float: right;
+      }
+
+      ::after {
+        clear: both;
+      }
+    }
+
+    .bottom-section {
+      width: 100%;
+      height: 50px;
+      margin-top: 150px;
+
+      >.circle {
+        margin: 0 auto;
+      }
+
+      ::after {
+        clear: both;
+      }
+    }
+
+    // Measurement section circle ornamentation
+    .circle {
+      display: inline-block;
+      height: @circle-height;
+      max-height: @circle-height;
+      width: @circle-height;
+      max-width: @circle-height;
+      border-radius: @circle-height;
+      border: 2px solid #00C300;
+      text-align: center;
+      line-height: @circle-height;
+      font-size: 25px;
+    }
+  }
+}
+
+.footer {
+  height: @navbar-height;
+  width: 100%;
+  background-color: orange;
+
+  .copyright {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    line-height: @navbar-height;
+  }
+}
